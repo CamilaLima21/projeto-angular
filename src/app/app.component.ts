@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projeto-angular';
+  empresa = 'NAVA';
+
+  corFundo = 'background-color: yellow';
+
+  getColor(){
+    let color : string = 'yellow';
+    return color;
+  }
+
+  clicar(){
+    alert("Botão Clicado")
+  }
+
+  getTextoDigitado(elemento : any){
+    console.log(elemento.value)
+    this.empresa = elemento.value;
+  }
 }
